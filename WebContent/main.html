@@ -9,15 +9,8 @@
 </head>
 
 <body style="background-color: orange"><img src="header.jpg" />
-    <div class="btn-group">
-  		<button>View Prisons</button>
- 		 <button>View Prisoners</button>
-  		<button>View Wanted</button>
-  		<p style="margin-top: 50px"></p>
-  		<button >Add Prisoner</button>
-</div>
-
-	<div class="table">
+    
+    <div class="table">
 	
 		<table>
 		 
@@ -50,7 +43,7 @@
 		 		</td>
 		 		
 		 		<td>
-		 			<ul style="list-style-type:none">
+		 			<ul style="l	ist-style-type:none">
 		 				<li>Name</li> 	 
 		 				<i>Status</i>
 		 				<li><a href="https://www.w3schools.com/html/"> view more details </a> </li>
@@ -102,6 +95,95 @@
 		 	</tr>
 		</table>	
 	</div>
+       
+    <div class="btn-group">
+  		<button>View Prisons</button>
+ 		 <button>View Prisoners</button>
+  		<button>View Wanted</button>
+  		<p style="margin-top: 50px"></p>
+  		<button id="add">Add Prisoner</button>
+	</div>
+	
+	<div>
+	
+
+<!-- The Modal -->
+	<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    	<form >
+		First Name: <input type="text" name="firstName"><br>
+		Middle Initial: <input type="text" name="firstName"><br>
+		Last Name: <input type="text" name="firstName"><br>
+		Gender: <input type="radio" name="gender" value="male" checked> Male
+  		<input type="radio" name="gender" value="female"> Female<br>
+  		Height: <input type="text" name="height"><br>
+		<form>
+  		Birthday:
+ 		 <input type="date" name="bday">
+		 </form>
+		 
+		Crime Comitted: <input type="text" name="crime"><br>
+		
+		Current Status: <select>
+		 <option value="wanted">Wanted</option>
+		 <option value="inprisoned">Inprisoned</option>
+		 <option value="released">Released</option>
+		
+		</select><br>
+		Citizenship: <input type="text" name="citizenship"><br>
+		Race: 
+		<select>
+			 <option value="asian">Asian</option>
+ 			 <option value="black">Black American or African</option>
+ 			 <option value="white">White or Caucasian</option>
+			 <option value="latino">Latino</option>
+			  <option value="hawaiian">hawaiian</option>
+		</select><br>
+		<input type="submit" name="Add">
+		<button id="cancel">Cancel</button>
+	</form>
+  </div>
+	
+	
+	</div>
+	
+	<script type="text/javascript">
+	
+	// Get the modal
+	var modal = document.getElementById('myModal');
+
+	// Get the button that opens the modal
+	var btn = document.getElementById("add");
+
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close")[0];
+
+	// When the user clicks on the button, open the modal 
+	btn.onclick = function() {
+	    modal.style.display = "block";
+	}
+
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() {
+	    modal.style.display = "none";
+	}
+
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+	    if (event.target == modal) {
+	        modal.style.display = "none";
+	    }
+	}
+	
+	
+	</script>
+	
+	
+	</div>	
+		
 </body>
 
 
