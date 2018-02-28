@@ -5,40 +5,76 @@
 <meta charset="ISO-8859-1">
 <title>Informate</title>
 
+    <link rel="stylesheet" href="style.css" />
 </head>
+ 
 
 <body>
 <div id="myModal" class="modal">
 	<div class="modal-content">
 	<form >
-		First Name: <input type="text" name="firstName"><br>
-		Middle Initial: <input type="text" name="firstName"><br>
-		Last Name: <input type="text" name="firstName"><br>
-		Gender: <input type="radio" name="gender" value="male" checked> Male
-  		<input type="radio" name="gender" value="female"> Female<br>
-  		Height: <input type="text" name="height"><br>
-		<form>
-  		Birthday:
- 		 <input type="date" name="bday">
-		 </form>
-		 
-		Crime Comitted: <input type="text" name="crime"><br>
+		<div class="row">
+ 		 	<div class="column"><label for="fName">First Name</label></div>
+ 		 	<div class="column"><input type="text" id="fname" name="name"></div>
+		</div>
+		<div class="row">
+ 		 	<div class="column"><label for="mi">Middle Initial</label></div>
+ 		 	<div class="column"><input type="text" id="mi" name="name"></div>
+		</div>
+		<div class="row">
+ 		 	<div class="column"><label for="lname">Last Name</label></div>
+ 		 	<div class="column"><input type="text" id="lname" name="name"></div>
+		</div>
+		<div class="row">
+ 		 	<div class="column"><label for="gender">Gender</label></div>
+ 		 	<div class="column">
+ 		 		<input type="radio" id="gender" name="gender" value="male" checked> Male
+  				<input type="radio" id="gender" name="gender" value="female"> Female<br>
+			</div>
+		</div>
+		<div class="row">
+ 		 	<div class="column"><label for="height">Height</label></div>
+ 		 	<div class="column"><input type="text" id="height"></div>
+		</div>
+		<div class="row">
+ 		 	<div class="column"><label for="bday">Birthday</label></div>
+ 		 	<div class="column"><input type="date" id="bday" name="bday"></div>
+		</div>		
+		 <div class="row">
+ 		 	<div class="column"><label for="crime">Crime Comitted</label></div>
+ 		 	<div class="column"><input type="text" id="crime"name="crime"></div>
+		</div>		
+		<div class="row">
+ 		 	<div class="column"><label for="status">Current Status</label></div>
+ 		 	<div class="column">
+			 <select id="status">
+		 		<option value="wanted">Wanted</option>
+				 <option value="inprisoned">Inprisoned</option>
+		 		<option value="released">Released</option>
 		
-		Current Status: <select>
-		 <option value="wanted">Wanted</option>
-		 <option value="inprisoned">Inprisoned</option>
-		 <option value="released">Released</option>
-		
-		</select><br>
-		Citizenship: <input type="text" name="citizenship"><br>
-		Race: 
-		<select>
-			 <option value="asian">Asian</option>
- 			 <option value="black">Black American or African</option>
- 			 <option value="white">White or Caucasian</option>
-			 <option value="latino">Latino</option>
+			</select></div>
+		</div> 		
+		<div class="row">
+ 		 	<div class="column"><label for="bday">Birthday</label></div>
+ 		 	<div class="column"><input type="date" id="bday" name="bday"></div>
+		</div>		
+		<div class="row">
+ 		 	<div class="column"><label for="citizenship">Citizenship</label></div>
+ 		 	<div class="column"><input type="text" name="citizenship"></div>
+		</div>	
+			 <div class="row">
+ 		 	<div class="column"><label for="race">Race</label></div>
+ 		 	<div class="column">
+ 		 	<select>
+				<option value="asian">Asian</option>
+ 			 	<option value="black">Black American or African</option>
+ 			 	<option value="white">White or Caucasian</option>
+			 	<option value="latino">Latino</option>
 			  <option value="hawaiian">hawaiian</option>
-		</select><br>
+				</select>
+			</div>
+		</div>	
+		
 		<input type="submit" name="Add">
 	</form>
   </div>
